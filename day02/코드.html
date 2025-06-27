@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h3>링크를 나타내는 앵커 태그</h3>
+    <header style="margin: 0; top: 0; right: 0; ">
+        <nav style="border: 1px solid black;">
+            <ul style="display: flex; gap: 10rem; justify-content: center;  ">
+                <a href="#멀티 미디어 태그">
+                    <li>멀티 미디어 태그</li>
+                </a>
+                <a href="#특수문자">
+                    <li>특수문자</li>
+                </a>
+                <a href="#폼 관련 태그">
+                    <li>폼 관련 태그</li>
+                </a>
+        </ul>
+    </nav>
+    </header>
+    <br><br>
+    
+    <h3 id="멀티 미디어 태그">멀티 미디어 태그</h3>
+    <div style="display: flex; justify-content: space-between; border: 1px solid black;">
+        <div style="">
+            <h3>이미지 태그</h3>
+            <img src="./images/a4.png" alt="풍선사진1">
+        </div>
+        <div>
+            <h3>비디오 태그</h3>
+            <video width="300px" src="./media/sample.mp4" controls></video>
+        </div>
+        <div>
+            <h3>오디오 태그</h3>
+            <audio  src="./media/sound.mp3" controls></audio>
+        </div>
+        <div>
+            <h3>임베드 태그</h3>
+            <embed  src="./media/sample.pdf" type="">
+        </div>
+    </div>
+     <br><br>
+
+    <h3 id="특수문자">html 특수문자 태그</h3>
+     <div style="border: 1px solid black; display: flex;">
+        <ul>
+            <ul>
+                <li>&amp;plusmn;</li>
+                <li>&amp;nbsp;</li>
+                <li>&amp;lt;</li>
+                <li>&amp;gt;</li>
+                <li>&amp;copy;</li>
+                <li>&amp;middot;</li>
+                <li>&amp;times;</li>
+                <li>&amp;divide;</li> 
+                <li>&amp;reg;</li>
+                <li>&amp;deg;</li>
+                <li>&amp;amp;</li>
+            </ul>
+        
+        </ul>
+        <ul>
+            <li>&plusmn;</li>
+            <li>&nbsp;</li>
+            <li>&lt;</li>
+            <li>&gt;</li>
+            <li>&copy;</li>
+            <li>&middot;</li>
+            <li>&times;</li>
+            <li>&divide;</li>
+            <li>&reg;</li>
+            <li>&deg;</li>
+            <li>&amp;</li>
+        </ul>
+
+    <ul>
+        <li>
+            오차범위는 &plusmn;5입니다.
+        </li>
+        <li>
+            띄어쓰기 &nbsp;해볼까요?
+        </li>
+        <li>
+            &lt; 괄호안에글씨 &gt;
+        </li>
+        <li>
+            &lt; 괄호안에글씨 &gt;
+        </li>
+        <li>
+            &copy; 저작권은 저한테 있습니다.
+        </li>
+        <li>
+            &middot; 가운데점입니다.
+        </li>
+        <li>
+            3&times;5=15입니다
+        </li>
+        <li>
+            1&divide;3=0.33333&middot;&middot;&middot;입니다.
+        </li>
+        <li>
+            등록상표입니다.&reg;
+        </li>
+        <li>
+            오늘은 40&deg;C입니다
+        </li>
+        <li>
+            이것은 &amp; 기호입니다.
+        </li>
+    </ul>
+
+     </div>
+      <br><br>
+
+    <h3 id="폼 관련 태그">폼 관련 태그</h3>
+    <form>
+        <fieldset>
+            <Legend>제목을 나타내는 레전드 태그</Legend>
+             <label >
+                인풋의 설명을 더하는 라벨 태그: <input type="search" name="search" placeholder="데이터 입력받는 인풋 태그" > 
+            </label >
+             <br><br>
+
+              <label>다양한 옵션을 선택할 수 있는 select와optgroup태그
+                <br>
+                <select name="country">
+                    <optgroup label="아시아">
+                        <option value="kr">대한민국</option>
+                        <option value="jp">일본</option>
+                    </optgroup>
+                    <optgroup label="유럽">
+                        <option value="en">잉글랜드</option>
+                        <option value="gm">스페인</option>
+                    </optgroup>
+                </select>
+            </label>
+            <br><br>
+
+            <label>자동완성 기능이 포함이 된 datalist태그
+                <br>
+                <input list="fruits" name="fruit">
+                <datalist id="fruits">
+                    <option value="Apple">
+                    <option value="Banana">
+                    <option value="CHerry">
+                </datalist>
+            </label>
+            <br><br>
+              
+            <textarea name="intro" rows="4" cols="40" placeholder="여러줄 입력하기위한 텍스트아레아 태그"></textarea>
+           
+            <br><br>
+
+            <button type="submit">폼 작성한것을 서버로 보내기 위한 버튼태그</button>
+        </fieldset>
+    </form>
+     <br><br>
+</body>
+</html>
