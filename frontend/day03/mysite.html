@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIKE</title>
     <link   rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1280px-Logo_NIKE.svg.png" type="image/x-icon">
+    
 </head>
 
 <style>
-
     body{
         margin: 0;
     }
@@ -21,6 +21,7 @@
         align-items: center;
         font-size:larger;
         gap: 0.5rem;
+        margin-left: 5rem;
        
     }
    
@@ -28,17 +29,38 @@
         width: 5rem;
         height: 30%;
     }
+
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70%;
+        width: 100%;
+        
+    }
+
+    
+    
     
     header{
      background-color: white;
-     height: 150px;
+     height: 200px;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      position: sticky;
      top: 0;
-     border-bottom: 1px solid black;
+     
+     z-index: 10;
+    }
+
+
+
+    
+    
+    .bar-list{
+        text-decoration: none;
     }
     nav{
        display: grid;
@@ -51,14 +73,19 @@
         
         
     }
-    a{
+    nav a{
          text-decoration: none;
          color: black;
-         border-right: 5px solid black;
+         
+         height: 100%;
+         display:flex;
+         justify-content: center;
+         align-items: center;
          
     }
-    a:hover{
+    nav a:hover{
         background-color: lightgray;
+        border-bottom: 5px solid black;
     }
     
     .banner{
@@ -99,8 +126,9 @@
         display: flex;
         gap: 0.5rem;
         justify-content: center;
+         
     }
-
+   
     .goods-box button{
         width: 100px;
         height: 40px;
@@ -109,9 +137,12 @@
         font-size: 15px;
         background: none;
         font-weight: bold;
+        cursor: pointer;
     }
     .goods-box button:hover{
         background-color: lightgray;
+       
+        
     }
     .goods-box img:hover{
         transform: scale(1.05);
@@ -148,16 +179,105 @@
         margin-top: 30px;
         justify-content: space-between;
         align-items: center;
-
+        
       
         
     }
-    
+
     footer > * {
         color: white;
+        
     }
-    
+    footer ul li{
+        padding: 0.5rem;
+    }
 
+
+     .container {
+      
+      display: inline-block;
+      
+    }
+    .hamburger {
+      padding: 0.5rem;
+      cursor: pointer;
+      height: 70%;
+      width: 50px;
+      display: absolute;
+      background: none;
+      border: none;
+      
+    }
+
+    .content {
+      /* li 앞에 점 제거 */
+      list-style: none;
+      /* 의도하지 않은 속성 제거 */
+      padding: 0;
+      margin: 0;
+      width: 20rem;
+      height: 100vh;
+      
+      background-color: #fff;
+      /* 떠있는 형태 */
+      position: absolute;
+      /* 컨텐츠를 숨긴다 */
+     display: none;
+    }
+
+     .container:hover{
+        background-color: lightgray;
+        border-radius: 99px;
+     }
+
+    /* 버튼에 호버했을 때 컨텐츠를 나타나게 한다 */
+    .container:hover .content {
+      display: block;
+    }
+
+    .link {
+      display: block;
+      padding: 2rem;
+      color: #000;
+      text-decoration: none;
+      font-size: larger
+    }
+
+    .link:hover {
+      background-color: #eee;
+      
+    }
+
+
+    .search-container{
+        
+        width: 30rem;
+        position: relative;
+    }
+    .search-input{
+        width: inherit;
+      /* design */
+      border: 1px solid #ddd;
+      padding: 1rem 5rem;
+      font-size: 1rem;
+      border-radius: 99px;
+      /* border 밖의 선 */
+      outline: none;
+    }
+    .icon{
+     width: 2.5rem;
+    position: absolute;
+      
+      left: 0.2rem;
+      fill: #888;
+      padding: 0.5rem;
+        
+    }
+    .icon:hover{
+        background-color: lightgray;
+        border-radius: 99px;
+        
+    }
     
    
 </style>
@@ -165,18 +285,61 @@
 
 <body>
     <header>
+        <div class="head">
         
-        <div class="nike">
-            <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1280px-Logo_NIKE.svg.png" alt="">
-            <h1>NIKE</h1>
+            <div class="container">
+                <button class="hamburger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
+                <ul class="content">
+                    <li>
+                        <a href="#" class="link">로그인</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">가입하기</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">고객센터</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">매장 찾기</a>
+                    </li>
+                    <li>
+                        <a href="#" class="link">검색</a>
+                    </li>
+                </ul>
+            </div>
+           
+           
+            <div class="nike">
+                <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1280px-Logo_NIKE.svg.png" alt="">
+                <h1>NIKE</h1>
+            </div>
+
+            <div class="search-container">
+                <input type="search" class="search-input" placeholder="검색">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                </svg>
+            </div>
+            
+             
         </div>
+
         <nav>
             <a href="">신발</a>
             <a href="">상의</a>
             <a href="">옷</a>
             <a href="">액세서리</a>
         </nav>
+
+       
     </header>
+
 
     <main>
         <section class="banner-section">
