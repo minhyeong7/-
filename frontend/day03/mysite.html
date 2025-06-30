@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIKE</title>
+    <link   rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1280px-Logo_NIKE.svg.png" type="image/x-icon">
+</head>
+
+<style>
+
+    body{
+        margin: 0;
+    }
+
+    .nike{
+        display: flex;
+        width: 100%;
+        height: 70%;
+        justify-content: center;
+        align-items: center;
+        font-size:larger;
+        gap: 0.5rem;
+       
+    }
+   
+    #logo{
+        width: 5rem;
+        height: 30%;
+    }
+    
+    header{
+     background-color: white;
+     height: 150px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     border-bottom: 1px solid black;
+    }
+    nav{
+       display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+       font-size: 2rem;
+       width: 100%;
+       height: 30%;
+       text-align: center;
+       align-items: center;
+        
+        
+    }
+    a{
+         text-decoration: none;
+         color: black;
+         border-right: 5px solid black;
+         
+    }
+    a:hover{
+        background-color: lightgray;
+    }
+    
+    .banner{
+        width: 100%;
+        height: 50rem;
+    }
+    
+    .banner-section{
+        width: 60%;
+        margin: 5rem auto;
+        
+
+    }
+    .goods{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5rem;
+        margin-left: 10rem;
+        
+        
+    }
+    .goods-box{
+        width: 300px;
+        height: 400px;
+        box-shadow: 5px 5px 5px lightgray;
+        
+        
+    }
+     .goods-box img{
+        object-fit: contain;
+        width: 90%;
+        height: 60%;
+        margin-left: 1rem;
+        
+        
+    }
+    .box-button{
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .goods-box button{
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        background: none;
+        font-weight: bold;
+    }
+    .goods-box button:hover{
+        background-color: lightgray;
+    }
+    .goods-box img:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+    }
+  
+    .main{
+        display: flex;
+        
+    }
+
+    aside{
+      margin-right: 5rem;
+        
+        
+    }
+    aside img{
+        width: 300px;
+        
+    }
+   
+    .practice{
+        background-color: antiquewhite;
+        font-size: 30px;
+    }
+    .div-flex{
+        display: flex;
+    }
+
+    footer{
+        display: flex;
+        background-color: black;
+        height: 400px;
+        margin-top: 30px;
+        justify-content: space-between;
+        align-items: center;
+
+      
+        
+    }
+    
+    footer > * {
+        color: white;
+    }
+    
+
+    
+   
+</style>
+
+
+<body>
+    <header>
+        
+        <div class="nike">
+            <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1280px-Logo_NIKE.svg.png" alt="">
+            <h1>NIKE</h1>
+        </div>
+        <nav>
+            <a href="">신발</a>
+            <a href="">상의</a>
+            <a href="">옷</a>
+            <a href="">액세서리</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-section">
+            <img class="banner" src="https://cdn.iconsumer.or.kr/news/photo/202002/11018_13879_953.jpg" alt="나이키 배너">
+        </section>
+
+        <div class="main">
+            <section class="goods">
+                <div class="goods-box">
+                    <img id="shoues" src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+                    <h1>나이키 운동화</h1>
+                    <p>130000원</p>
+                    <div class="box-button">
+                        <button>구매하기</button>
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                <div class="goods-box">
+                    <img id="shoues" src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+                    <h1>나이키 운동화</h1>
+                    <p>초특가 세일</p>
+                    <div class="box-button">
+                        <button>구매하기</button>
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                 <div class="goods-box">
+                    <img id="shoues" src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+                    <h1>나이키 운동화</h1>
+                    <p>초특가 세일</p>
+                    <div class="box-button">
+                        <button>구매하기</button>
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                 <div class="goods-box">
+                    <img id="shoues" src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+                    <h1>나이키 운동화</h1>
+                    <p>초특가 세일</p>
+                    <div class="box-button">
+                        <button>구매하기</button>
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                 <div class="goods-box">
+                    <img id="shoues" src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+                    <h1>나이키 운동화</h1>
+                    <p>초특가 세일</p>
+                   <div class="box-button">
+                        <button>구매하기</button>
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                 <div class="goods-box">
+                    <img id="shoues" src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+                    <h1>나이키 운동화</h1>
+                    <p>초특가 세일</p>
+                    <div class="box-button">
+                        <button>구매하기</button>
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                 <div class="goods-box">
+                    <img id="shoues" src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+                    <h1>나이키 운동화</h1>
+                    <p>초특가 세일</p>
+                    <div class="box-button">
+                        <button>구매하기</button>
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                 <div class="goods-box">
+                    <img id="shoues" src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+                    <h1>나이키 운동화</h1>
+                    <p>초특가 세일</p>
+                   <div class="box-button">
+                        <button>구매하기</button>
+                        <button>장바구니</button>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <img src="https://i.pinimg.com/originals/5e/6e/71/5e6e7189fbe74bef265d1484aeef68f6.png" alt="">
+            </aside>
+        </div>
+
+       
+        <div class="div-flex">
+            <p class="practice">연습용글입니다</p>
+            <p class="practice">연습용글입니다</p>
+        </div>
+        
+        <div class="div-block">
+            <img class="practice"
+                src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+            <img class="practice"
+                src="https://static.nike.com/a/images/t_default/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="">
+        </div>
+
+    </main>
+
+    <footer>
+       
+    
+        <ul>
+            <li>식품관</li>
+            <li>도서</li>
+            <li>리빙</li>
+            <li>완구</li>
+        </ul>
+        
+
+        <ul>
+            <li>개인정보 처리방침</li>
+            <li>이용 약관</li>
+        </ul>
+
+        <ul>
+            <li>대표 : 임꺽정</li>
+            <li>전화번호 : 02-1323-1324</li>
+            <li>사업자 번호 123-23-234524</li>
+            <li>주소 : 부평구 오거리 큰건물 5층, 123</li>
+            <li>&copy; 저작권</li>
+        </ul>
+    </footer>
+</body>
+</html>
