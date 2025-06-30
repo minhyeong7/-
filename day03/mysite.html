@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+</head>
+
+<style>
+
+    body{
+        margin: 0;
+    }
+    header{
+     background-color: antiquewhite;
+     height: 150px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+    }
+    nav{
+       display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+       font-size: 2rem;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+        
+        
+    }
+    a{
+         text-decoration: none;
+         padding: 0.5rem;
+         color: black;
+         border: 1px solid black;
+         
+    }
+    
+    .banner{
+        width: 100%;
+        height: 60rem;
+    }
+    
+    .banner-section{
+        width: 70%;
+        margin: 5rem auto;
+        
+
+    }
+
+   
+</style>
+
+
+<body>
+    <header>
+        <h1>나의 판매 사이트</h1>
+        <nav>
+            <a href="">식품관</a>
+            <a href="">도서</a>
+            <a href="">리빙</a>
+            <a href="">완구</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner-section">
+            <img class="banner" src="https://cdn.iconsumer.or.kr/news/photo/202002/11018_13879_953.jpg" alt="나이키 배너">
+        </section>
+    </main>
+</body>
+</html>
