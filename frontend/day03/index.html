@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Site</title>
+
+</head>
+<style>
+    body {
+    padding: 20px;
+}
+
+header {
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap:50px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color:rgb(74, 74, 94);
+    font-size:40px;
+}
+
+.banner-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* padding: 30px 10px 30px 10px; */
+    padding: 30px;
+}
+
+.banner {
+    width: 100%;
+}
+
+.goods {
+    display:flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.goods-box {
+    width: 330px;
+    /* height: 500px; */
+    box-shadow: 0px 0px 10px rgb(104, 104, 104);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgb(253, 230, 214), rgb(255, 255, 255))
+}
+
+.goods-box img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.goods-box img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
+.middle {
+    display:flex;
+    padding: 0 30px 0 30px;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.blue {
+    color: blue;
+}
+
+aside p {
+    text-align:center;
+}
+
+.border-blue {
+    border: 5px solid blue;
+}
+
+.color-green {
+    color: green;
+}
+
+.practice {
+    background-color: antiquewhite;
+    font-size: 30px;
+}
+
+.practice-img{
+    display: block;
+    background-color: antiquewhite;
+    font-size: 30px;
+}
+
+.div-flex {
+    display: flex;
+}
+
+.button-group {
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    color:rgb(65, 64, 64);
+    font-size: 17px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background: linear-gradient(to bottom, rgb(191, 187, 250), rgb(243, 178, 218));
+    box-shadow: 0 0 10px gray;
+    cursor:pointer;
+}
+
+button:hover {
+    color:white;
+    background: linear-gradient(to bottom, rgb(1, 7, 2), rgb(5, 5, 5));
+}
+
+header img {
+    position: absolute;
+    left : 50px;
+    width: 150px;
+}
+
+footer {
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 200px;
+    margin-top: 30px;
+    color:white;
+    padding: 50px;
+}
+
+footer a:link {
+    color:white;
+}
+
+footer a:visited {
+    color:rgb(255, 242, 53);
+}
+</style>
+<body>
+<header>
+    <img src="/다운로드.jpg" alt="">
+    <h1>나의 판매 사이트</h1>
+    <nav>
+        <a href="">식품관</a>
+        <a href="">도서</a>
+        <a href="">리빙</a>
+        <a href="">완구</a>
+    </nav>
+</header>
+<main>
+<section class="banner-section">
+   <img class="banner" src="/배너2.png" alt="할인배너"> 
+</section>
+
+<div class="middle">
+    <section class="goods">
+        <div class="goods-box">
+            <a href="/test.html"><img src="/images/a3.png" alt=""></a>
+            <p>초특가 풍선 1000개 세일</p>
+            <p>프로포즈 이벤트 상공에서 가능</p>
+            <p>3000000원 -> 2000000원</p>
+            <div class="button-group">
+                <button>구매하기</button>
+                <button>장바구니</button>
+            </div>
+        </div>
+        <div class="goods-box">
+            <img src="/images/a3.png" alt="">
+            <p>초특가 풍선 1000개 세일</p>
+            <p>프로포즈 이벤트 상공에서 가능</p>
+            <p>3000000원 -> 2000000원</p>
+            <div class="button-group">
+                <button>구매하기</button>
+                <button>장바구니</button>
+            </div>
+        </div>
+        <div class="goods-box">
+            <img src="/images/a3.png" alt="">
+            <p>초특가 풍선 1000개 세일</p>
+            <p>프로포즈 이벤트 상공에서 가능</p>
+            <p>3000000원 -> 2000000원</p>
+            <div class="button-group">
+                <button>구매하기</button>
+                <button>장바구니</button>
+            </div>
+        </div>
+        <div class="goods-box">
+            <img src="/images/a3.png" alt="">
+            <p>초특가 풍선 1000개 세일</p>
+            <p>프로포즈 이벤트 상공에서 가능</p>
+            <p>3000000원 -> 2000000원</p>
+            <div class="button-group">
+                <button>구매하기</button>
+                <button>장바구니</button>
+            </div>
+        </div>
+        <div class="goods-box">
+            <img src="/images/a3.png" alt="">
+            <p>초특가 풍선 1000개 세일</p>
+            <p>프로포즈 이벤트 상공에서 가능</p>
+            <p>3000000원 -> 2000000원</p>
+            <div class="button-group">
+                <button>구매하기</button>
+                <button>장바구니</button>
+            </div>
+        </div>
+         <div class="goods-box">
+            <img src="/images/a3.png" alt="">
+            <p>초특가 풍선 1000개 세일</p>
+            <p>프로포즈 이벤트 상공에서 가능</p>
+            <p>3000000원 -> 2000000원</p>
+            <div class="button-group">
+                <button>구매하기</button>
+                <button>장바구니</button>
+            </div>
+        </div>
+        <div class="goods-box">
+            <img src="/images/a3.png" alt="">
+            <p>초특가 풍선 1000개 세일</p>
+            <p>프로포즈 이벤트 상공에서 가능</p>
+            <p>3000000원 -> 2000000원</p>
+            <div class="button-group">
+                <button>구매하기</button>
+                <button>장바구니</button>
+            </div>
+        </div>
+        <div class="goods-box">
+            <img src="/images/a3.png" alt="">
+            <p>초특가 풍선 1000개 세일</p>
+            <p>프로포즈 이벤트 상공에서 가능</p>
+            <p>3000000원 -> 2000000원</p>
+            <div class="button-group">
+                <button>구매하기</button>
+                <button>장바구니</button>
+            </div>
+        </div>
+    </section>
+
+    <aside class="border-blue">
+        <p>광고 받습니다.</p>
+    </aside>
+</div>
+
+
+<footer>
+
+    <ul>
+        <li><a href="/day_0630/">아직 안누름</a></li>
+        <li><a href="/day_0627/">식품관</a></li>
+        <li><a href="/day_0627/">도서</a></li>
+        <li><a href="/day_0626/01.htmlclass.html">리빙</a></li>
+        <li><a href="https://search.naver.com/search.naver?ssc=tab.image.all&where=image&sm=tab_jum&query=%EB%A1%9C%EA%B3%A0+png#imgId=image_sas%3Aweb_a5cbb0624faf475aeddd4bf774d5625f">완구</a></li>
+    </ul>
+
+    <ul>
+        <li>개인정보 처리방침</li>
+        <li>이용 약관</li>
+    </ul>
+    
+    <ul>
+        <li>대표 : 임꺽정</li>
+        <li>전화번호 : 02-1323-1324</li>
+        <li>사업자 번호 123-23-234524</li>
+        <li>주소 : 부평구 오거리 큰건물 5층, 123</li>
+        <li>&copy; 저작권 내용이 있겠죠</li>
+    </ul>
+
+</footer>
+
+
+
+</main>   
+</body>
+</html>

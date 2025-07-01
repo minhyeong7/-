@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        img{
+            height: 300px;
+        }
+    </style>
+    <h2>이미지 슬라이드</h2>
+    <img id="imgSlide" src="./images/img1.png" alt="">
+    
+    <script>
+        const images=["./images/img1.png","./images/img2.png","./images/img3.png"]
+
+       
+        let index=0;
+       
+        setInterval(
+            () =>{
+
+                if(index>2){
+                    index=0;
+                }
+                document.getElementById("imgSlide").src =images[index];
+                index++;
+                
+                
+                
+            },3000);
+
+    </script>
+
+
+</body>
+</html>

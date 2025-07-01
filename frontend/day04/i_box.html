@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>로그인</h2>
+    <label  for="">
+        아이디
+        <input type="text" id="id"><br>
+    </label>
+
+    <label for="">
+        비밀번호
+        <input id="password" type="password" name="password"><br>
+    </label>
+    
+    <button onclick="login()">로그인</button>
+   
+
+    <script>
+        function login(){
+            let id = document.getElementById("id").value;
+             let password = document.getElementById("password").value;
+             
+            if(id && password){
+                alert("로그인 완료");
+                console.log("아이디:"+id,"비밀번호:"+password)
+            }
+            else("아이디와 비밀번호 모두 입력!")
+        }
+    </script>
+</body>
+</html>
