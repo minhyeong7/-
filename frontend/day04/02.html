@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 박스 두개 만들어 주세요
+        컨테이너 너비 600px, 플렉스
+        박스크기 임시로 하시고 박스 색깔이랑 주세요 
+    -->
+
+    <style>
+        .container{
+            display: flex;    
+            width: 600px;
+            border: 1px solid black;
+        }
+        .box{
+            flex: 1 1 0%;
+            width: 300px;
+            height: 5rem;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+         .box2{
+            flex: 1 1 0%;
+            width: 300px;
+            height: 5rem;
+            background-color: yellow;
+            text-align: center;
+        }
+        .box3{
+            
+            width: 200px;
+            height: 5rem;
+            background-color: green;
+            text-align: center;
+
+        }
+
+        .container1{
+            margin-top: 10rem;
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        .text{
+            width: 200px;
+            height: 200px;
+            border: 1px solid yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+        <div class="container">
+            <div class=" box">
+                box1
+            </div>
+            <div class="box2">
+                box2
+            </div>
+             <div class="box3">
+                box3
+            </div>
+        </div>
+
+        <div class="container1">
+            <div class="text">
+                안녕하세요
+            </div>
+        </div>
+     
+</body>
+</html>
